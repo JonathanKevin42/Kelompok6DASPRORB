@@ -1,0 +1,71 @@
+#:kivy 2.1
+<pythonform>:
+    MDFloatLayout:
+        md_bg_color: ("#d3ede6")
+    Image:
+        source:"kv/assets/foto/lapakngodingtr.png"
+        size_hint: .5 , .5
+        pos_hint:{"center_x": 0.5,"center_y": 0.70}
+    Image:
+        source:"kv/assets/foto/logo.png"
+        size_hint: .2 , .2
+        pos_hint:{"center_x": 0.5,"center_y": 0.85}
+    MDLabel:
+        text: "IS-REPAIR"
+        halign : "center"
+        font_size : "30sp"
+        font_name : "Atma"
+        pos_hint:{"center_y": 0.71}
+    MDLabel:
+        text: "Jemput,Service,Antar"
+        halign : "center"
+        font_size : "16sp"
+        font_name : "Tagline"
+        pos_hint:{"center_y": 0.65}
+        color:("#808080")
+    MDTextField:
+        id: menu
+        input_filter: ["servis","upgrade","konsul"]
+        hint_text: "Menu"
+        mode: "rectangle"
+        icon_left: "account"
+        size_hint: 0.70, 0.10
+        pos_hint:{"center_x": 0.5,"center_y": 0.58}
+    MDTextField:
+        id: lokasi
+        hint_text: "Lokasi"
+        mode:"rectangle"
+        icon_left: "key-variant"
+        size_hint: 0.70, 0.10
+        pos_hint:{"center_x": 0.5, "center_y": 0.47}
+    MDTextField:
+        id: kerusakan
+        hint_text: "Kerusakan"
+        mode: "rectangle"
+        icon_left: "account"
+        size_hint: 0.70, 0.10
+        pos_hint:{"center_x": 0.5,"center_y": 0.36}
+    MDTextField:
+        id: budget
+        input_filter: "float"
+        hint_text: "Maximum Budget"
+        mode: "rectangle"
+        icon_left: "account"
+        size_hint: 0.70, 0.10
+        pos_hint:{"center_x": 0.5,"center_y": 0.25}
+    MDRaisedButton:
+        text:"submit"
+        font_size : "16sp"
+        font_name : "Atma"
+        size_hint: 0.66, 0.02
+        pos_hint: {"center_x": 0.5, "center_y": 0.05}
+        md_bg_color: ("#23a484")
+        on_release :
+            root.manager.current = "hallog"
+    MDLabel:
+        text: "Lupa Password?"
+        halign : "center"
+        font_size : "16sp"
+        font_name : "Line"
+        pos_hint:{"center_y": 0.17}
+        color:("#000000")

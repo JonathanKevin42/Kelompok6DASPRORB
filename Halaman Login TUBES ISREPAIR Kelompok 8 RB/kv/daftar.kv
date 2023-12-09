@@ -1,0 +1,82 @@
+<Daftar>:
+    MDFloatLayout:
+        md_bg_color: ("#d3ede6")
+    Image:
+        source:"kv/assets/foto/lapakngodingtr.png"
+        size_hint: .5 , .5
+        pos_hint:{"center_x": 0.5,"center_y": 0.70}
+    Image:
+        source:"kv/assets/foto/logo.png"
+        size_hint: .2 , .2
+        pos_hint:{"center_x": 0.5,"center_y": 0.85}
+    MDLabel:
+        text: "IS-REPAIR"
+        halign : "center"
+        font_size : "30sp"
+        font_name : "Atma"
+        pos_hint:{"center_y": 0.71}
+    MDLabel:
+        text: "Jemput,Service,Antar"
+        halign : "center"
+        font_size : "14sp"
+        font_name : "Tagline"
+        pos_hint:{"center_y": 0.67}
+        color:("#808080")
+    MDLabel:
+        text: "Daftar Member IS-REPAIR"
+        halign : "center"
+        font_size : "16sp"
+        font_name : "Atma"
+        pos_hint:{"center_y": 0.63}
+        color:("#808080")
+    MDTextField:
+        id: nama
+        hint_text: "Nama Lengkap"
+        mode: "rectangle"
+        icon_left: "account"
+        size_hint: 0.70, 0.09
+        pos_hint:{"center_x": 0.5,"center_y": 0.57}
+    MDTextField:
+        id: email
+        hint_text: "Email aktif"
+        mode:"rectangle"
+        icon_left: "email-check-outline"
+        size_hint: 0.70, 0.09
+        pos_hint:{"center_x": 0.5, "center_y": 0.47}
+    MDTextField:
+        id: nohp
+        hint_text: "No HP Aktif"
+        mode:"rectangle"
+        icon_left: "cellphone-basic"
+        size_hint: 0.70, 0.09
+        pos_hint:{"center_x": 0.5, "center_y": 0.37}
+    MDTextField:
+        id: alamat
+        hint_text: "Alamat Lengkap"
+        mode:"rectangle"
+        icon_left: "city-variant"
+        size_hint: 0.70, 0.09
+        pos_hint:{"center_x": 0.5, "center_y": 0.27}
+    MDTextField:
+        id: password
+        password: True
+        hint_text: "Password min 8 karakter"
+        mode:"rectangle"
+        icon_left: "key-variant"
+        size_hint: 0.70, 0.09
+        pos_hint:{"center_x": 0.5, "center_y": 0.17}
+    MDRaisedButton:
+        text:"D a f t a r"
+        font_size : "16sp"
+        font_name : "Atma"
+        size_hint: 0.30, 0.02
+        pos_hint: {"center_x": 0.32, "center_y": 0.07}
+        md_bg_color: ("#23a484")
+        on_press : root.submit()
+    MDLabel:
+        text: "Sudah Punya Akun?"
+        halign : "center"
+        font_size : "16sp"
+        font_name : "Line"
+        pos_hint:{"center_x": 0.68,"center_y": 0.07}
+        color:("#000000")
